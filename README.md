@@ -1,23 +1,26 @@
 # RICK AND MORTY API
 
-> This challenge consists of a list of Rick and Morty characters, displaying the details about each character. 
-> When logging in, a character favorite option is available, and all favorite characters are saved in the application's bank.
-> It is listed on a favorites page also available only after login.
+> Este projeto consiste em uma lista de personagens de Rick e Morty, exibindo os detalhes sobre cada personagem.
+> Ao fazer login, uma opção de personagem favorito fica disponível, e todos os personagens favoritos são salvos no banco de dados da aplicação.
+> Página de favoritos está presente apenas enquanto o usuário estiver logado.
 
-> The project is still being developed
+> O projeto ainda está sendo desenvolvido
 
-## 🚀 Installing
+## 🚀 Instalação
 
-* Clone frontend and backend of this aplication
-* install dependencies using npm or yarn
+Você precisará do [Node.js](https://nodejs.org) e [PostgreSQL](https://www.postgresql.org/) instalado em seu computador para inicializar este aplicativo.
 
-## Environment variables
+```bash
+git clone https://github.com/baez-requiem/RickAndMortyAPI.BACKEND.git
+$ cd RickAndMortyAPI.BACKEND
+$ yarn install
+$ yarn prisma migrate dev
+$ yarn dev
+```
 
-* Frontend
-* * create an .env file
-* * set VITE_SERVER_URL="`http://localhost:4000/graphql`"
-* * set VITE_API_URL="`https://rickandmortyapi.com/graphql`"
-* * 
-* Backend
-* * create an .env file
-* * set DATABASE_URL="`<your_database_url>`"
+Execute o aplicativo no modo de desenvolvimento.<br/>
+
+## Variáveis de ambiente
+
+* crie um arquivo .env
+* insira DATABASE_URL="`<your_database_url>`"
